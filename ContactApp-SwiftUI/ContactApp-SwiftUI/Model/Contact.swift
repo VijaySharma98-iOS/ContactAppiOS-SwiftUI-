@@ -6,14 +6,17 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 
-class Contact {
-    var id = UUID().uuidString
-    var firstName: String
-    var lastName: String
+class Contact: Object {
+    //var id = UUID().uuidString
+    @Persisted(primaryKey: true) var id: ObjectId
+    @Persisted var firstName: String
+    @Persisted var lastName: String
     
-    init(firstName: String, lastName: String) {
+    convenience init(firstName: String, lastName: String) {
+        self.init()
         self.firstName = firstName
         self.lastName = lastName
     }

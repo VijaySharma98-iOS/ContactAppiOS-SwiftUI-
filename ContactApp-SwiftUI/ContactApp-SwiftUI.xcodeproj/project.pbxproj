@@ -3,26 +3,42 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 56;
 	objects = {
 
-/* Begin PBXFileReference section */
-		210F0BE82CBFFBE800924959 /* ContactApp-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ContactApp-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* Begin PBXBuildFile section */
+		2137AF912CC1233900F37F5D /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2137AF902CC1233900F37F5D /* DatabaseHelper.swift */; };
+		21901B902CC118D100809E16 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21901B862CC118D100809E16 /* Contact.swift */; };
+		21901B912CC118D100809E16 /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21901B8A2CC118D100809E16 /* ContactListView.swift */; };
+		21901B922CC118D100809E16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21901B8B2CC118D100809E16 /* ContentView.swift */; };
+		21901B932CC118D100809E16 /* ContactApp_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21901B8E2CC118D100809E16 /* ContactApp_SwiftUIApp.swift */; };
+		21901B942CC118D100809E16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21901B882CC118D100809E16 /* Preview Assets.xcassets */; };
+		21901B952CC118D100809E16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21901B8D2CC118D100809E16 /* Assets.xcassets */; };
+		21A822B82CC11E6C00EA8C49 /* Ext-UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A822B72CC11E6C00EA8C49 /* Ext-UIApplication.swift */; };
+		354EE2654AA3080406ADE5BD /* Pods_ContactApp_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79CCCCBD13A91FA2D803F16 /* Pods_ContactApp_SwiftUI.framework */; };
+/* End PBXBuildFile section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		210F0BEA2CBFFBE800924959 /* ContactApp-SwiftUI */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "ContactApp-SwiftUI";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXFileReference section */
+		14BEB91B856339A96EB279F1 /* Pods-ContactApp-SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactApp-SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-ContactApp-SwiftUI/Pods-ContactApp-SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		210F0BE82CBFFBE800924959 /* ContactApp-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ContactApp-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2137AF902CC1233900F37F5D /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		21901B862CC118D100809E16 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		21901B882CC118D100809E16 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		21901B8A2CC118D100809E16 /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
+		21901B8B2CC118D100809E16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		21901B8D2CC118D100809E16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21901B8E2CC118D100809E16 /* ContactApp_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactApp_SwiftUIApp.swift; sourceTree = "<group>"; };
+		21A822B72CC11E6C00EA8C49 /* Ext-UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext-UIApplication.swift"; sourceTree = "<group>"; };
+		B52EA6B237372449D853DC55 /* Pods-ContactApp-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactApp-SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-ContactApp-SwiftUI/Pods-ContactApp-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		E79CCCCBD13A91FA2D803F16 /* Pods_ContactApp_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContactApp_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		210F0BE52CBFFBE800924959 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				354EE2654AA3080406ADE5BD /* Pods_ContactApp_SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,8 +48,10 @@
 		210F0BDF2CBFFBE800924959 = {
 			isa = PBXGroup;
 			children = (
-				210F0BEA2CBFFBE800924959 /* ContactApp-SwiftUI */,
+				21901B8F2CC118D100809E16 /* ContactApp-SwiftUI */,
 				210F0BE92CBFFBE800924959 /* Products */,
+				82EA9E4A32C19D96B7343ABF /* Pods */,
+				92786C27A1ECA7CF248AD19F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,6 +63,78 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		2137AF8F2CC1231500F37F5D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2137AF902CC1233900F37F5D /* DatabaseHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		21901B872CC118D100809E16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				21901B862CC118D100809E16 /* Contact.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		21901B892CC118D100809E16 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				21901B882CC118D100809E16 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		21901B8C2CC118D100809E16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				21901B8A2CC118D100809E16 /* ContactListView.swift */,
+				21901B8B2CC118D100809E16 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		21901B8F2CC118D100809E16 /* ContactApp-SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				2137AF8F2CC1231500F37F5D /* Helper */,
+				21A822B62CC11E2C00EA8C49 /* Extensions */,
+				21901B872CC118D100809E16 /* Model */,
+				21901B892CC118D100809E16 /* Preview Content */,
+				21901B8C2CC118D100809E16 /* View */,
+				21901B8D2CC118D100809E16 /* Assets.xcassets */,
+				21901B8E2CC118D100809E16 /* ContactApp_SwiftUIApp.swift */,
+			);
+			path = "ContactApp-SwiftUI";
+			sourceTree = "<group>";
+		};
+		21A822B62CC11E2C00EA8C49 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				21A822B72CC11E6C00EA8C49 /* Ext-UIApplication.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		82EA9E4A32C19D96B7343ABF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14BEB91B856339A96EB279F1 /* Pods-ContactApp-SwiftUI.debug.xcconfig */,
+				B52EA6B237372449D853DC55 /* Pods-ContactApp-SwiftUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		92786C27A1ECA7CF248AD19F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E79CCCCBD13A91FA2D803F16 /* Pods_ContactApp_SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -52,20 +142,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 210F0BF62CBFFBEA00924959 /* Build configuration list for PBXNativeTarget "ContactApp-SwiftUI" */;
 			buildPhases = (
+				6BED4495F9D32DB285421C7B /* [CP] Check Pods Manifest.lock */,
 				210F0BE42CBFFBE800924959 /* Sources */,
 				210F0BE52CBFFBE800924959 /* Frameworks */,
 				210F0BE62CBFFBE800924959 /* Resources */,
+				0574A5A514EF9AF2E8FEEC97 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				210F0BEA2CBFFBE800924959 /* ContactApp-SwiftUI */,
-			);
 			name = "ContactApp-SwiftUI";
-			packageProductDependencies = (
-			);
 			productName = "ContactApp-SwiftUI";
 			productReference = 210F0BE82CBFFBE800924959 /* ContactApp-SwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -86,6 +173,7 @@
 				};
 			};
 			buildConfigurationList = 210F0BE32CBFFBE800924959 /* Build configuration list for PBXProject "ContactApp-SwiftUI" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -93,8 +181,6 @@
 				Base,
 			);
 			mainGroup = 210F0BDF2CBFFBE800924959;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 210F0BE92CBFFBE800924959 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -109,16 +195,66 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21901B942CC118D100809E16 /* Preview Assets.xcassets in Resources */,
+				21901B952CC118D100809E16 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0574A5A514EF9AF2E8FEEC97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ContactApp-SwiftUI/Pods-ContactApp-SwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ContactApp-SwiftUI/Pods-ContactApp-SwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ContactApp-SwiftUI/Pods-ContactApp-SwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BED4495F9D32DB285421C7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ContactApp-SwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		210F0BE42CBFFBE800924959 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21A822B82CC11E6C00EA8C49 /* Ext-UIApplication.swift in Sources */,
+				21901B902CC118D100809E16 /* Contact.swift in Sources */,
+				21901B912CC118D100809E16 /* ContactListView.swift in Sources */,
+				21901B922CC118D100809E16 /* ContentView.swift in Sources */,
+				2137AF912CC1233900F37F5D /* DatabaseHelper.swift in Sources */,
+				21901B932CC118D100809E16 /* ContactApp_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +298,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -225,7 +361,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -246,6 +382,7 @@
 		};
 		210F0BF72CBFFBEA00924959 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14BEB91B856339A96EB279F1 /* Pods-ContactApp-SwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -266,14 +403,19 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mobile.ContactApp-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		210F0BF82CBFFBEA00924959 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B52EA6B237372449D853DC55 /* Pods-ContactApp-SwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,9 +436,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mobile.ContactApp-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
